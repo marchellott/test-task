@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document test task</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="customHeading">My First Web Page</h1>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <img src="cat.jpg" width="300px" height="200px">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var heading = document.getElementById('customHeading');
+
+            heading.addEventListener('click', function() {
+                heading.textContent = 'My Awesome Web Page';
+            });
+        });
+    </script>
+</body>
+</html>
